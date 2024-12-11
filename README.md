@@ -207,7 +207,7 @@ dac-sim widom examples/ --gas=CO2 --temperature=300 --num_insertions=5000 --fold
 The following command performs molecular dynamics simulation to calculate the diffusion coefficient and transport properties of gas molecules on CIF files in the `examples` directory. The results are saved in the `results` directory.
 
 ```bash
-dac-sim md examples --gas_list="CO2,H2O" --timesteps=1.0 --temperature=300 --num_steps=1000 --save_dir=results
+dac-sim md examples --gas_list="CO2,H2O" --timesteps=1.0 --temperature=300 --num_md_steps=1000 --save_dir=results
 ```
 
 #### (3) Geometry optimization
