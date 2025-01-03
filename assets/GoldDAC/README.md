@@ -54,3 +54,6 @@ train = read("train.xyz", ":")
 val = read("val.xyz", ":")
 test = read("test.xyz", ":")
 ```
+
+>[!TIP]
+> The tutorial notebook for `GoldDAC` is available at [`turorial_golddac.ipynb`(tutorial_golddac.ipynb).
