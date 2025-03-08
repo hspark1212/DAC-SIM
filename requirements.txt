@@ -1,4 +1,6 @@
 tqdm
+pytest
+torch>=1.12,<=2.5
 mace_torch==0.3.6
 torch_dftd
 ase

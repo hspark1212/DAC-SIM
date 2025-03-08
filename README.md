@@ -48,7 +48,7 @@ conda create -n dac-sim python=3.10
 conda activate dac-sim
 ```
 
-- Pytorch >= 1.12 (install from the [official website](https://pytorch.org/) suitable for your environment)
+- Pytorch >= 1.12,<=2.5 (install from the [official website](https://pytorch.org/) suitable for your environment)
 
 >[!NOTE]
 > It is recommended to install PyTorch prior to installing DAC-SIM to avoid potential issues with GPU support.
@@ -72,6 +72,9 @@ git clone https://github.com/hspark1212/DAC-SIM.git
 cd DAC-SIM
 pip install -e . 
 ```
+
+>[!NOTE]
+> Once the package is installed, you can check the installation correctly by running `pytest` in the terminal. The test cases are located in the `tests` directory.
 
 ## Usage
 
