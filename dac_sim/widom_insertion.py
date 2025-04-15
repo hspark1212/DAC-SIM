@@ -254,6 +254,7 @@ class WidomInsertion(Dynamics):
                         float("nan"),
                         float("nan"),
                     )
+                    interaction_energies[i] = 1e10  # lead to zero boltzmann factor
                     self.nsteps += 1
                     continue
 
@@ -272,7 +273,7 @@ class WidomInsertion(Dynamics):
 
                 # Handle invalid interaction energy
                 if interaction_energy < -1.25:
-                    interaction_energy = 100.0  # lead to zero boltzmann factor
+                    interaction_energy = 1e10  # lead to zero boltzmann factor
 
                 interaction_energies[i] = interaction_energy
                 boltzmann_factor = np.exp(
